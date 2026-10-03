@@ -1,0 +1,27 @@
+{
+  "name": "chatapp-fullstack",
+  "version": "1.0.0",
+  "description": "Full-stack real-time chat platform with Express, Socket.IO, MongoDB, and React",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/config/seed.js",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "realtime",
+    "express",
+    "react",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}
